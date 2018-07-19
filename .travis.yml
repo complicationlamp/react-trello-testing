@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: sCmjTok5L0isaKzCntP6NYlXu6vcjwkFUGRzV5ci9E1WJl/4DEJqXTPzf24dRVEXyytk1aaqjtkj4UxCVmOtmtrvzS0szhp1zkhA+h5nCDfd6qbu8ttr10yWIBaNmzUtx/XhZyqK2L7l34px5+QG806XpX7U3Q4XyJb9ZswkfWyf/gMIyZDOP6QbLUPBz1JOaVN+TnE21+WbATwf95Zm/k6KpvAKD3RGbCHWyA9FmTvS9SzPKckn6Se/VML+8NV6cnSi0DHPjiuvMfDnsompA4y58GRe7h5ZR4Q/rvogXGmZ2/G5Z+psTDgh2Qpptrj8IFETruTES7O2itT341O+h6W5QdnQTa9R7tlJ8ZxkTHJgYNicCS/VKeGPvcUu/pqAA9q1CbUdr9cfIC1Y9AsROjDMAzt0vvYzDfiT+I0JqxNrH58h6oY8NEBOo7URRH6PV+KId1y+F5bouFhSYJgv3QObmH4Rja9BXLV/tqqYXS86ifcAeo9DQLPAlimfEuB0iWGhl5s5Trn5MpuZQA7asWXOtwOSuF7ghvh7vdPh3t/SfkOVZJUTD0GryIhLO6P8TOpzSD7oP5Nv/w7dx6qUUcTIoMMCB0zoYs32BQVc6526kqbQZdECiKNTlycwXcM660DxiDlG3sugiL7sdTirTja75mazIH2cnro+2GRu9NY=
+  app: react-trello-test
+  on:
+    repo: complicationlamp/react-trello-testing
